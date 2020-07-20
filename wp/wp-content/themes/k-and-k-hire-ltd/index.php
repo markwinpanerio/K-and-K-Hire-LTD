@@ -15,43 +15,21 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
+<?php echo importTemplate('./layout/l-header'); ?>
+<main class="l-index">
+	<div class="landing" style="background-image: url(<?php echo resolve_asset_uri() . 'images/background/landing-background.jpg'; ?>)">
+		<div class="l-container">
+			<div class="landing-content">
+				<h2 class="landing-title">K&K HIRE LTD</h2>
+				<p class="landing-description">One of the south’s largest disabled school transport companies. Always maintaining the highest standards in comfort and safety, from the start of each journey to the end.</p>
+				<?php echo importTemplate('./components/button', [
+					'url'  =>  '/',
+					'text' => 'FIND OUT MORE'
+				]); ?>
+			</div>
+		</div>
+	</div>
+</main>
 
 <?php
-get_sidebar();
 get_footer();

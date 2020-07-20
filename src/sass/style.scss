@@ -3,11 +3,18 @@
 @import 'setting';
 @import 'base/sanitize';
 
+@import 'utility/media-queries';
+@import 'utility/utility';
+
 @import 'base/mixin';
 @import 'base/base';
 
 @import 'layout/layout';
 @import 'layout/l-page';
+
+@import 'components/button';
+@import 'components/header';
+@import 'components/landing';
 
 @import 'sprites/icon';
 
