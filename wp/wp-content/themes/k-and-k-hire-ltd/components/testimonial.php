@@ -14,7 +14,7 @@
                             <div class="testimonial-card">
                                 <div class="testimonial-inner">
                                     <blockquote>
-                                        <p><?php echo $testimonial['tittle']; ?></p>
+                                        <p><?php echo $testimonial['title']; ?></p>
                                     </blockquote>
                                     <div class="testimonial-content">
                                         <span class="testimonial-name"><?php echo $testimonial['name']; ?></span>
