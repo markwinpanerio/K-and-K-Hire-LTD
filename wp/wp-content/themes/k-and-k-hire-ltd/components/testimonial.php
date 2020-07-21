@@ -32,6 +32,7 @@
                 <a href="#" class="testimonial-button testimonial-button-next">
                     <i class="fas fa-chevron-right"></i>
                 </a>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>

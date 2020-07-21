@@ -87,3 +87,21 @@
     font-family: $font-roboto-slab;
     font-size: 14px;
 }
+
+.testimonial-inner .swiper-pagination {
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    text-align: center;
+    position: relative;
+
+    .swiper-pagination-bullet {
+        margin: 0 3px;
+        opacity: 0.2;
+        width: 8px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000;
+        opacity: 1;
+    }
+}

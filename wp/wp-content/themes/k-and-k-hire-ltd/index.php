@@ -117,7 +117,9 @@ $testimonial = array(
 	<?php echo importTemplate('./components/testimonial', [
 		'testimonials' => $testimonial,
 	]); ?>
+	<?php echo importTemplate('./components/contact-us'); ?>
 </main>
+<?php echo importTemplate('./layout/l-footer'); ?>
 
 <?php
 get_footer();
