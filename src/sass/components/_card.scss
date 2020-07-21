@@ -1,0 +1,39 @@
+.card {
+    margin: 100px 0 50px;
+
+    @include max-screen($breakpoint-mobile) {
+        margin: 50px 0 0;
+    }
+}
+
+.card-image {
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @include max-screen($breakpoint-mobile) {
+        padding-top: 66.65%;
+    }
+}
+
+.card-article {
+    h2 {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.card-item {
+    padding: 0 20px;
+
+    @include max-screen($breakpoint-mobile) {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+}

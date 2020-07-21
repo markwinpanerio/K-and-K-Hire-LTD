@@ -36,15 +36,15 @@ gulp.task('es6', function() {
     .pipe(connect.reload());
 })
 
-//minify css
-gulp.task('css', function () {
-  gulp.src('./wp/wp-content/themes/k-and-k-hire-ltd/assets/**/*.css')
-    .pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": true
-    }))
-    .pipe(gulp.dest('./wp/wp-content/themes/k-and-k-hire-ltd/assets/'));
-});
+// //minify css
+// gulp.task('css', function () {
+//   gulp.src('./wp/wp-content/themes/k-and-k-hire-ltd/assets/**/*.css')
+//     .pipe(uglifycss({
+//       "maxLineLen": 80,
+//       "uglyComments": true
+//     }))
+//     .pipe(gulp.dest('./wp/wp-content/themes/k-and-k-hire-ltd/assets/css'));
+// });
 
 //compile ejs to html
 gulp.task('ejs', function() {
@@ -64,14 +64,14 @@ gulp.task('image', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('run', ['sass', 'css', 'es6', 'image', 'ejs']);
+gulp.task('run', ['sass', 'es6', 'image', 'ejs']);
 
 gulp.task('watch', function() {
 
   var server = livereload();
 
   gulp.watch('./src/sass/**/*.scss', ['sass']);
-  gulp.watch('./wp/wp-content/themes/k-and-k-hire-ltd/assets/**/*.css', ['css']);
+  // gulp.watch('./wp/wp-content/themes/k-and-k-hire-ltd/assets/**/*.css', ['css']);
   gulp.watch('./src/js/**/*.js', ['es6']);
   gulp.watch('./src/*.ejs', ['ejs']);
   gulp.watch('./src/images/**/*', ['image']);
