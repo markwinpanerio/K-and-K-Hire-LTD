@@ -30,8 +30,9 @@
 }
 
 .l-container {
-  max-width: 1140px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .row {
@@ -48,12 +49,13 @@ $col: 12;
 @for $i from 1 through $col {
   $width: (100% / ($col/$i));
 
-  .col-lg-#{$i} {
-    box-sizing: border-box;
-    flex: 0 0 auto;
-    flex-basis: $width;
-    max-width: $width;
-    // word-wrap: break-word;
+  .col-sm-#{$i} {
+    @include max-screen($breakpoint-mobile) {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      flex-basis: $width;
+      max-width: $width;
+    }
   }
 
   .col-md-#{$i} {
@@ -65,12 +67,11 @@ $col: 12;
     }
   }
 
-  .col-sm-#{$i} {
-    @include max-screen($breakpoint-mobile) {
-      box-sizing: border-box;
-      flex: 0 0 auto;
-      flex-basis: $width;
-      max-width: $width;
-    }
+  .col-lg-#{$i} {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    flex-basis: $width;
+    max-width: $width;
+    // word-wrap: break-word;
   }
 }

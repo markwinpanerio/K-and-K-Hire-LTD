@@ -1,4 +1,13 @@
 const $testimoninalSlider = $('#js-testimonial-slider');
+const $headerMenu = $('.header-menu');
+const $headerNav = $('.header-nav');
+
+$headerMenu.on('click', function() {
+    const $this = $(this);
+
+    $this.toggleClass('is-active');
+    $headerNav.slideToggle();
+})
 
 new Swiper($testimoninalSlider[0], {
     loop: true,

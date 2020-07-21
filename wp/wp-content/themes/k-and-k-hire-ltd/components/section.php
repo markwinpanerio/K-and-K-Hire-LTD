@@ -19,7 +19,7 @@
             <div class="l-container">
                 <div class="row card-inner">                
                     <?php foreach($card as $card_item): ?>
-                        <div class="col-lg-4 card-item">
+                        <div class="col-lg-4 col-sm-12 card-item">
                             <article class="card-article">
                                 <div class="card-image" style="background-image: url(<?php echo $card_item['image']; ?>)"></div>
                                 <h2><?php echo $card_item['title']; ?></h2>

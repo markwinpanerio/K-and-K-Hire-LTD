@@ -2,28 +2,28 @@
     <div class="header-upper">
         <div class="l-container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-3 col-lg-4">
                     <a href="<?php echo home_url(); ?>" class="header-logo">
                         <img src="<?php echo resolve_asset_uri() . 'images/logo/kandk-school-transport-logo.jpg'; ?>" alt="">
                     </a>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-md-9 col-lg-8">
                     <div class="row">
-                        <div class="header-right-item col-lg-4">
+                        <div class="header-right-item col-lg-4 col-md-3">
                             <div class="header-right-upper">
                                 <i aria-hidden="true" class="fas fa-headphones"></i>
                                 <span>Call Us</span>
                             </div>
                             <a href="tel:023 8065 0650" class="header-right-link">023 8065 0650</a>
                         </div>
-                        <div class="header-right-item col-lg-4">
+                        <div class="header-right-item col-lg-4 col-md-3">
                             <div class="header-right-upper">
                                 <i aria-hidden="true" class="fas fa-mobile-alt"></i>
                                 <span>Call Us Anytime</span>
                             </div>
                             <a href="tel:07775 756180" class="header-right-link">07775 756180</a>
                         </div>
-                        <div class="header-right-item col-lg-4">
+                        <div class="header-right-item col-lg-4 col-md-3">
                             <div class="header-right-upper">
                                 <i aria-hidden="true" class="fas fa-envelope"></i>
                                 <span>Email Us</span>
@@ -39,7 +39,12 @@
         <div class="l-container">
             <div class="row">
                 <div class="col-lg-8">
-                <nav class="header-nav">
+                    <div class="header-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header-nav">
                         <div class="header-nav-item">
                             <a href="<?php echo home_url(); ?>" class="header-nav-link">
                                 <span>Home</span>
