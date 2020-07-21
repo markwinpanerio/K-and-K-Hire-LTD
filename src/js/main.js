@@ -9,6 +9,15 @@ $headerMenu.on('click', function() {
     $headerNav.slideToggle();
 })
 
+$(window).on('resize', function() {
+    if($(window).outerWidth() > 768) {
+        $headerMenu.removeClass('is-active');
+        $headerNav.slideDown();
+    } else {
+        $headerNav.hide();
+    }
+})
+
 new Swiper($testimoninalSlider[0], {
     loop: true,
     speed: 1000,

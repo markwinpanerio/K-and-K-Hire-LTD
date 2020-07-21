@@ -1,5 +1,9 @@
 .card {
     margin: 100px 0 50px;
+
+    @include max-screen($breakpoint-mobile) {
+        margin: 50px 0 0;
+    }
 }
 
 .card-image {
@@ -29,6 +33,7 @@
     padding: 0 20px;
 
     @include max-screen($breakpoint-mobile) {
-     margin-bottom: 30px;
+        margin-bottom: 30px;
+        padding: 0;
     }
 }

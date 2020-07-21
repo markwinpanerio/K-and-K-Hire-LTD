@@ -3,6 +3,10 @@
     background-image: linear-gradient(180deg, #504dd3 0%, #3c39a7 100%);
     padding: 70px 0 100px;
     color: $color-white;
+
+    @include max-screen($breakpoint-mobile) {
+        padding: 50px 0;;
+    }
 }
 
 .contact-title {
@@ -57,6 +61,11 @@
         padding: 15px 25px;
         border: 0;
         border-radius: 0;
+
+        @include max-screen($breakpoint-mobile) {
+            width: 100%;
+            padding: 20px 25px;
+        }
     }
 }
 

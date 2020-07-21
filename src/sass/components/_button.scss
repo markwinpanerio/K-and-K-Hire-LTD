@@ -6,6 +6,11 @@
     font-size: 14px;
     border-radius: 2px;
     font-size: 16px;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $color-black;
+    }
 
     &:visited {
         color: $color-white;

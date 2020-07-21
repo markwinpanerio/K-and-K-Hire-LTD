@@ -1,19 +1,19 @@
 <footer class="footer">
 	<div class="l-container">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-12 footer-item">
 				<div class="footer-upper-content">
 					<h4>EMAIL</h4>
 					<a href="emailto:info@kandkschooltransport.co.uk">info@kandkschooltransport.co.uk</a>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-12 footer-item">
 				<div class="footer-upper-content">
 					<h4>PHONE</h4>
 					<a href="tel:023 80650650">023 80650650</a>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-12 footer-item">
 				<div class="footer-upper-content">
 					<h4>SOCIAL</h4>
 					<a href="https://www.facebook.com/kkhireltd/" class="footer-upper-sns">

@@ -136,7 +136,7 @@
                 color 0.2s ease-in-out;
 
     @include max-screen($breakpoint-mobile) {
-        padding: 10px;
+        padding: 15px 25px;
         color: #55595c;
         background-color: #fff;
     }
@@ -181,7 +181,7 @@
 }
 
 .header-sns-link {
-    padding: 10px 12px;
+    padding: 15px 20px;
     display: inline-block;
     background-color: #848484;
     font-size: 15px;
@@ -195,9 +195,16 @@
 }
 
 .header-menu {
+    display: none;
+
+    @include max-screen($breakpoint-mobile) {
+        display: block;
+    }
+
     width: 22px;
     height: 16px;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 
     span {
         display: block;
@@ -205,30 +212,43 @@
         width: 100%;
         height: 2px;
         background-color: $color-white;
+        transition: opacity 0.25s ease-in-out,
+                    transform 0.25s ease-in-out,
+                    left 0.25s ease-in-out,
+                    bottom 0.25s ease-in-out;
 
         &:first-child {
+            transform-origin: left;
             top: 0;
+            transform: rotate(0);
         }
 
         &:nth-child(2) {
             top: 50%;
+            left: 0;
             transform: translateY(-50%);
         }
 
         &:last-child {
             bottom: 0;
+            transform-origin: left;
+            transform: rotate(0);
         }
     }
 
     &.is-active {
         span:first-child {
-            transform-origin: left;
             transform: rotate(45deg);
         }
 
+        span:nth-child(2) {
+            opacity: 0;
+            left: -10px;
+        }
+
         span:last-child {
-            transform-origin: right;
             transform: rotate(-45deg);
+            bottom: -1px;
         }
     }
 }
