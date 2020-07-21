@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node src/js/main.js",
-    "build": "gulp"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +17,9 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^4.0.1",
     "gulp-uglifycss": "^1.1.0"
+  },
+  "scripts": {
+    "start": "node src/js/main.js",
   },
   "dependencies": {
     "swiper": "^6.0.4"
