@@ -1,0 +1,19 @@
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$base-font-family: "Roboto", sans-serif;
+$font-roboto-slab: "Roboto Slab", Sans-serif;
+$base-font-size: 14px;
+$base-font-color: #474747;
+$base-background-color: #fff;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-primary: #3c39a7;
+
+$breakpoint-medium: 1024px;
+$breakpoint-mobile: 768px;
