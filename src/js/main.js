@@ -1,4 +1,10 @@
-const test = 20;
-const data = false;
+const $testimoninalSlider = $('#js-testimonial-slider');
 
-console.log(test);
+new Swiper($testimoninalSlider[0], {
+    loop: true,
+    speed: 1000,
+    navigation: {
+        nextEl: '.testimonial-button-next',
+        prevEl: '.testimonial-button-prev',
+    }
+});

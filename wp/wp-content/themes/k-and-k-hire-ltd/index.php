@@ -42,7 +42,25 @@ $card_articles = array(
 			'button_text' => 'Read More',
 		]
 	]
-)
+);
+
+$testimonial = array(
+	[
+		'title' => '"I have been using K & K to service our school minibuses for the past 3 years and have at last found a local garage that provides a fast, efficient, reliable service, where I always find that they can fit in an unexpected breakdown. I really like the personal service where they will collect and deliver the vehicle to your doorstep. The work is organised well and they are knowledgeable about the motor trade, so that most jobs can be catered for. Their admin team is also efficient and the paperwork goes through smoothly"',
+		'name'  => 'Brian Marriott',
+		'job'   => 'Admin Manager | Shepherds Down School, Compton, Winchester'
+	],
+	[
+		'title' => '“A very friendly company who are interested in customer satisfaction.  A very professional company who will always have my custom for hiring or purchasing a vehicle, and I would not have a problem recommending them”.',
+		'name'  => 'Mark Duncan',
+		'job'   => 'Facilities Manager | Rose Road Association'
+	],
+	[
+		'title' => '"K&K Hire have served St Edward`s School for many years. They have provided us with transport at a moment’s notice whilst being sensitive to the needs of our pupils".',
+		'name'  => 'Steve Witt',
+		'job'   => 'St Edwards School, Sherfield English, Romsey'
+	]
+);
 ?>
 
 <?php echo importTemplate('./layout/l-header'); ?>
@@ -95,6 +113,9 @@ $card_articles = array(
 			'<p>A courtesy vehicle can be supplied with prior arrangement.</p>',
 			'<p>We can also arrange compliance testing, tail lift checks and certification for licenced minibuses and wheelchair accessible vehicles.</p>'
 		],
+	]); ?>
+	<?php echo importTemplate('./components/testimonial', [
+		'testimonials' => $testimonial,
 	]); ?>
 </main>
 

@@ -20,5 +20,8 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^4.0.1",
     "gulp-uglifycss": "^1.1.0"
+  },
+  "dependencies": {
+    "swiper": "^6.0.4"
   }
 }
