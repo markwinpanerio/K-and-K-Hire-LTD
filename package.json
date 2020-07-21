@@ -19,7 +19,7 @@
     "gulp-uglifycss": "^1.1.0"
   },
   "scripts": {
-    "start": "node src/js/main.js"
+    "start": "node src/js/index.js"
   },
   "dependencies": {
     "swiper": "^6.0.4"
