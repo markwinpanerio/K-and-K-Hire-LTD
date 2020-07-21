@@ -1,0 +1,26 @@
+.card {
+    margin: 100px 0 50px;
+}
+
+.card-image {
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-article {
+    h2 {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.card-item {
+    padding: 0 20px;
+}
